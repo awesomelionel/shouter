@@ -3,6 +3,8 @@
   shouted
   <% #by using the render method, it will infer the partial based on the polymorphic type of the 'content' %>
   <% #Amazeballs %>
-  <%= render shout.content %>
+  <div>
+    <%= render shout.content %>
+  </div>
   <%= link_to time_ago_in_words(shout.created_at), shout  %>
 <% end %>

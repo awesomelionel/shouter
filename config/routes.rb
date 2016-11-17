@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create, :show]
   resources :shouts, only: [:show]
   resources :text_shouts, only: [:create]
+  resources :photo_shouts, only: [:create]
 end
